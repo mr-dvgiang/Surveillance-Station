@@ -1,77 +1,84 @@
-# 免责声明
+# Tuyên bố miễn trừ trách nhiệm
 
-本研究旨在为了学术和技术交流的目的，探讨商业软件注册限制的绕过方法。
+Nghiên cứu này được thực hiện nhằm mục đích nghiên cứu học thuật và trao đổi kỹ thuật, tập trung vào việc tìm hiểu các phương pháp vượt qua cơ chế giới hạn đăng ký bản quyền của phần mềm thương mại.
 
-**特别声明：**
+**Tuyên bố đặc biệt:**
 
-1. 本研究仅用于学术研究和技术学习，不得用于任何违法或不正当的目的，包括但不限于商业用途、侵权行为或破坏性操作。
-2. 研究成果的发布不代表对绕过方法的推广或鼓励，也不对任何由此产生的法律责任或后果承担责任。
-3. 用户应自行确保在进行任何相关操作之前，已经获得软件供应商的授权许可，并遵守所有相关法律法规。
-4. 本免责声明不适用于任何违反法律法规的行为，作者不对因使用本研究成果而产生的任何法律责任、经济损失或其他不良后果承担责任。
+1. Nghiên cứu này chỉ phục vụ cho mục đích nghiên cứu học thuật và học tập kỹ thuật, không được sử dụng cho bất kỳ mục đích trái pháp luật hoặc không phù hợp nào, bao gồm nhưng không giới hạn ở mục đích thương mại, hành vi xâm phạm bản quyền hoặc các hoạt động mang tính phá hoại.
+2. Việc công bố kết quả nghiên cứu không đồng nghĩa với việc quảng bá hoặc khuyến khích sử dụng các phương pháp vượt qua cơ chế bảo vệ bản quyền, đồng thời tác giả không chịu trách nhiệm đối với bất kỳ hậu quả hoặc trách nhiệm pháp lý nào phát sinh từ việc sử dụng các phương pháp này.
+3. Người sử dụng có trách nhiệm tự đảm bảo rằng mình đã được nhà cung cấp phần mềm cấp phép hợp lệ trước khi thực hiện bất kỳ thao tác nào có liên quan, đồng thời phải tuân thủ mọi quy định pháp luật hiện hành.
+4. Tuyên bố miễn trừ trách nhiệm này không áp dụng đối với bất kỳ hành vi vi phạm pháp luật nào. Tác giả không chịu trách nhiệm đối với bất kỳ trách nhiệm pháp lý, tổn thất kinh tế hoặc hậu quả bất lợi nào phát sinh từ việc sử dụng kết quả của nghiên cứu này.
 
-请使用者在使用本研究成果时，自觉遵守法律法规，并对自己的行为负责。
-
----
-### 交流群
-[Telegram Group](https://t.me/+40j656PRiB41NTI1)
+Vui lòng tuân thủ các quy định pháp luật khi sử dụng kết quả nghiên cứu và tự chịu trách nhiệm đối với mọi hành vi của mình.
 
 ---
-### 请我喝杯咖啡
-If this code helps and you wish to support me:
-- [PayPal: https://paypal.me/wovow](https://paypal.me/wovow)
 
-- ![License](https://raw.githubusercontent.com/ohyeah521/Surveillance-Station/main/img/buy%20me%20coffee.jpg)
-- ![License](https://raw.githubusercontent.com/ohyeah521/Surveillance-Station/main/img/eth.png)
-- - Ethereum: 0xcD3e7014164c462c07aD2700D1206Fb586388428
--
+## Tải xuống Surveillance Station
 
-
-## Download [Surveillance Station](https://archive.synology.com/download/Package/SurveillanceStation)
+https://archive.synology.com/download/Package/SurveillanceStation
 
 ---
-### 破解授权 Crack License
-- Online:
+
+## Kích hoạt giấy phép (Crack License)
+
+### Trực tuyến (Online)
+
 ```shell
-# 1. 普通 Normal
+# 1. Thông thường
 curl -fsSL https://raw.githubusercontent.com/ohyeah521/Surveillance-Station/main/activated.sh | bash
-# 2. 使用github代理(可自行更换代理, 注意结尾的/) Using github proxy (Please replace the proxy address yourself)
+
+# 2. Sử dụng proxy GitHub (có thể thay bằng proxy khác, lưu ý dấu / ở cuối)
 export GPROXY=https://gh-proxy.org/
-curl -fsSL ${GPROXY:-}https://raw.githubusercontent.com/ohyeah521/Surveillance-Station/main/activated.sh  | bash
+curl -fsSL ${GPROXY:-}https://raw.githubusercontent.com/ohyeah521/Surveillance-Station/main/activated.sh | bash
 export GPROXY=
-# 3. 使用 http(s)/socks5 代理(请自行更换代理地址) Using http(s)/socks5 proxy (Please replace the proxy address yourself)
+
+# 3. Sử dụng proxy HTTP(S)/SOCKS5 (hãy thay bằng địa chỉ proxy của bạn)
 export CPROXY=http://username:password@192.168.20.1:7890
-curl -fsSL -x ${CPROXY:+-x ${CPROXY}} https://raw.githubusercontent.com/ohyeah521/Surveillance-Station/main/activated.sh  | bash
+curl -fsSL -x ${CPROXY:+-x ${CPROXY}} https://raw.githubusercontent.com/ohyeah521/Surveillance-Station/main/activated.sh | bash
 export CPROXY=
 ```
-- Offline:
+
+### Ngoại tuyến (Offline)
+
 ```shell
-# 1. Download https://github.com/ohyeah521/Surveillance-Station/archive/refs/heads/main.zip
-# 2. Unload to your DSM system.
+# 1. Tải xuống:
+# https://github.com/ohyeah521/Surveillance-Station/archive/refs/heads/main.zip
+
+# 2. Giải nén lên hệ thống DSM của bạn.
 unzip Surveillance-Station-main.zip
 cd Surveillance-Station-main
 chmod +x activated.sh
-./activated.sh 
+./activated.sh
 ```
 
 ---
-### 恢复授权 Restore License
-- Online:
+
+## Khôi phục giấy phép (Restore License)
+
+### Trực tuyến (Online)
+
 ```shell
-# 1. 普通 Normal
+# 1. Thông thường
 curl -fsSL https://raw.githubusercontent.com/ohyeah521/Surveillance-Station/main/activated.sh | bash -s -- -r
-# 2. 使用 github 代理(可自行更换代理, 注意结尾的/) Using github proxy (Please replace the proxy address yourself)
+
+# 2. Sử dụng proxy GitHub (có thể thay bằng proxy khác, lưu ý dấu / ở cuối)
 export GPROXY=https://gh-proxy.org/
 curl -fsSL ${GPROXY:-}https://raw.githubusercontent.com/ohyeah521/Surveillance-Station/main/activated.sh | bash -s -- -r
 export GPROXY=
-# 3. 使用 http(s)/socks5 代理(请自行更换代理地址) Using http(s)/socks5 proxy (Please replace the proxy address yourself)
+
+# 3. Sử dụng proxy HTTP(S)/SOCKS5 (hãy thay bằng địa chỉ proxy của bạn)
 export CPROXY=http://username:password@192.168.20.1:7890
 curl -fsSL ${CPROXY:+-x ${CPROXY}} https://raw.githubusercontent.com/ohyeah521/Surveillance-Station/main/activated.sh | bash -s -- -r
 export CPROXY=
 ```
-- Offline:
+
+### Ngoại tuyến (Offline)
+
 ```shell
-# 1. Download https://github.com/ohyeah521/Surveillance-Station/archive/refs/heads/main.zip
-# 2. Unload to your DSM system.
+# 1. Tải xuống:
+# https://github.com/ohyeah521/Surveillance-Station/archive/refs/heads/main.zip
+
+# 2. Giải nén lên hệ thống DSM của bạn.
 unzip Surveillance-Station-main.zip
 cd Surveillance-Station-main
 chmod +x activated.sh
@@ -79,8 +86,3 @@ chmod +x activated.sh
 ```
 
 ---
-### 破解60授权
-![License](https://raw.githubusercontent.com/ohyeah521/Surveillance-Station/main/img/crack_license.png)
-
-
-
