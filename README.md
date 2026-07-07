@@ -1,4 +1,4 @@
-# forked from ohyeah521/Surveillance-Station
+# forked from mr-dvgiang/Surveillance-Station
 
 # Tuyên bố miễn trừ trách nhiệm
 
@@ -27,16 +27,16 @@ https://archive.synology.com/download/Package/SurveillanceStation
 
 ```shell
 # 1. Thông thường
-curl -fsSL https://raw.githubusercontent.com/ohyeah521/Surveillance-Station/main/activated.sh | bash
+curl -fsSL https://raw.githubusercontent.com/mr-dvgiang/Surveillance-Station/main/activated.sh | bash
 
 # 2. Sử dụng proxy GitHub (có thể thay bằng proxy khác, lưu ý dấu / ở cuối)
 export GPROXY=https://gh-proxy.org/
-curl -fsSL ${GPROXY:-}https://raw.githubusercontent.com/ohyeah521/Surveillance-Station/main/activated.sh | bash
+curl -fsSL ${GPROXY:-}https://raw.githubusercontent.com/mr-dvgiang/Surveillance-Station/main/activated.sh | bash
 export GPROXY=
 
 # 3. Sử dụng proxy HTTP(S)/SOCKS5 (hãy thay bằng địa chỉ proxy của bạn)
 export CPROXY=http://username:password@192.168.20.1:7890
-curl -fsSL -x ${CPROXY:+-x ${CPROXY}} https://raw.githubusercontent.com/ohyeah521/Surveillance-Station/main/activated.sh | bash
+curl -fsSL -x ${CPROXY:+-x ${CPROXY}} https://raw.githubusercontent.com/mr-dvgiang/Surveillance-Station/main/activated.sh | bash
 export CPROXY=
 ```
 
@@ -44,7 +44,7 @@ export CPROXY=
 
 ```shell
 # 1. Tải xuống:
-# https://github.com/ohyeah521/Surveillance-Station/archive/refs/heads/main.zip
+# https://github.com/mr-dvgiang/Surveillance-Station/archive/refs/heads/main.zip
 
 # 2. Giải nén lên hệ thống DSM của bạn.
 unzip Surveillance-Station-main.zip
@@ -61,16 +61,16 @@ chmod +x activated.sh
 
 ```shell
 # 1. Thông thường
-curl -fsSL https://raw.githubusercontent.com/ohyeah521/Surveillance-Station/main/activated.sh | bash -s -- -r
+curl -fsSL https://raw.githubusercontent.com/mr-dvgiang/Surveillance-Station/main/activated.sh | bash -s -- -r
 
 # 2. Sử dụng proxy GitHub (có thể thay bằng proxy khác, lưu ý dấu / ở cuối)
 export GPROXY=https://gh-proxy.org/
-curl -fsSL ${GPROXY:-}https://raw.githubusercontent.com/ohyeah521/Surveillance-Station/main/activated.sh | bash -s -- -r
+curl -fsSL ${GPROXY:-}https://raw.githubusercontent.com/mr-dvgiang/Surveillance-Station/main/activated.sh | bash -s -- -r
 export GPROXY=
 
 # 3. Sử dụng proxy HTTP(S)/SOCKS5 (hãy thay bằng địa chỉ proxy của bạn)
 export CPROXY=http://username:password@192.168.20.1:7890
-curl -fsSL ${CPROXY:+-x ${CPROXY}} https://raw.githubusercontent.com/ohyeah521/Surveillance-Station/main/activated.sh | bash -s -- -r
+curl -fsSL ${CPROXY:+-x ${CPROXY}} https://raw.githubusercontent.com/mr-dvgiang/Surveillance-Station/main/activated.sh | bash -s -- -r
 export CPROXY=
 ```
 
@@ -78,7 +78,7 @@ export CPROXY=
 
 ```shell
 # 1. Tải xuống:
-# https://github.com/ohyeah521/Surveillance-Station/archive/refs/heads/main.zip
+# https://github.com/mr-dvgiang/Surveillance-Station/archive/refs/heads/main.zip
 
 # 2. Giải nén lên hệ thống DSM của bạn.
 unzip Surveillance-Station-main.zip
